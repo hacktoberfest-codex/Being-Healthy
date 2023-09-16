@@ -1,0 +1,120 @@
+nav {
+    background:#fff;
+    
+  }
+  .nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .nav-toggle {
+    font-size: 1.5rem;
+    color: hsl(210, 22%, 49%);
+    background: transparent;
+    border-color: transparent;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+  .nav-toggle:hover {
+    color: hsl(205,86%,17%);
+    transform: rotate(90deg);
+  }
+  .logo {
+    height: 70px;
+  }
+  .links{
+    list-style-type: no;
+  }
+  .links a {
+    color: black;
+    font-size: 1rem;
+    text-transform: capitalize;
+    letter-spacing: 0.2rem;
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s linear;
+  }
+  .links li{
+    padding: 0.5rem 0.77rem;
+  }
+  .social-icons {
+    display: none;
+  }
+  .links {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+  }
+  .show-links {
+    height: 10rem;
+  }
+  .show-links,.social-icons{
+    list-style-type: none;
+  }
+  .heading{
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 3rem;
+    letter-spacing: 0.7rem;
+    text-transform: capitalize;
+    color: #fff;
+    background: transparent;
+    border: none;
+  }
+  
+  .main-contenet{
+    object-fit: cover;
+    width: 100%;
+    background-image: url(bg\ img\ 3.jpg);
+  }
+  @media screen and (min-width: 800px) {
+    nav{
+        background-image: url(bg\ img\ 3.jpg);
+    }
+    .nav-center {
+      max-width: 1170px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+      
+    }
+    .nav-header {
+      padding: 0;
+    }
+    .nav-toggle {
+      display: none;
+    }
+    .links {
+      height: auto;
+      display: flex;
+    }
+    .links a {
+      padding: 0;
+      margin: 0 0.5rem;
+    }
+    .links a:hover {
+      padding: 0;
+      background: transparent;
+    }
+    .links,.social-icons{
+        list-style-type: none;
+      }
+    .links  a,.social-icons a{
+        text-decoration: none;
+      }
+    .social-icons {
+        display: flex;
+      }
+      .social-icons a {
+        margin: 0 0.5rem;
+        color:black;
+        transition: all 0.3s linear;
+      }
+      .social-icons a:hover {
+        color: hsl(205,86%,17%);
+      }
+      
+  }
