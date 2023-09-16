@@ -10,6 +10,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
   />
   <link rel="stylesheet" href="style.css" />
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
   <body>
     <div class="full-content">
@@ -21,7 +22,7 @@
               <i class="fas fa-bars"></i>
             </button>
           </div>
-
+  
           <ul class="links">
             <li>
               <a href="index.html">home</a>
@@ -39,7 +40,7 @@
               <a href="contact.html" target="_blank">contact</a>
             </li>
           </ul>
-
+  
           <ul class="social-icons">
             <li>
               <a href="https://www.facebook.com">
@@ -51,13 +52,13 @@
                 <i class="fab fa-twitter"></i>
               </a>
             </li>
-
+  
             <li>
               <a href="https://www.LinkedIn.com">
                 <i class="fab fa-linkedin"></i>
               </a>
             </li>
-
+  
             <li>
               <a href="https://www.email.com">
                 <i class="fab fa-gamil"></i>
@@ -74,22 +75,69 @@
           <div class="para">
             Healthy living hacks" include a variety of methods for enhancing
             wellbeing, including stress reduction and exercise and diet. The
-            ability to prolong life, improve its quality, increase energy,
-            improve mental health, assist with weight management, avoid
-            illnesses, relieve stress, provide inspiration, rely on support
-            systems, and create a positive feedback loop are the driving forces
-            behind the adoption of these hacks. Adopting these tips is an
-            investment in long-term wellness, motivated by individual objectives
-            and the hope of a better, more satisfying life. Long-term commitment
-            is more likely when little, sustainable adjustments are made over
-            time since they can produce major gains.
+            ability to prolong life, improve its quality, increase energy, improve
+            mental health, assist with weight management, avoid illnesses, relieve
+            stress, provide inspiration, rely on support systems, and create a
+            positive feedback loop are the driving forces behind the adoption of
+            these hacks. Adopting these tips is an investment in long-term
+            wellness, motivated by individual objectives and the hope of a better,
+            more satisfying life. Long-term commitment is more likely when little,
+            sustainable adjustments are made over time since they can produce
+            major gains.
           </div>
         </div>
         <div class="register">
-          <div class="text">register now</div>
+          <div class="text">
+             register now
+          </div>
         </div>
       </section>
     </div>
+    <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-md-6">
+              <div id="signInForm">
+                  <h2 class="form-heading">Sign In</h2>
+                  <form>
+                      <div class="form-group">
+                          <label for="signInEmail">Email</label>
+                          <input type="email" class="form-control" id="signInEmail" placeholder="Enter your email">
+                      </div>
+                      <div class="form-group">
+                          <label for="signInPassword">Password</label>
+                          <input type="password" class="form-control" id="signInPassword" placeholder="Enter your password">
+                      </div>
+                      <button type="button" class="btn btn-primary" onclick="signIn()">Sign In</button>
+                  </form>
+                  <p class="mt-3">Don't have an account? <a href="#" onclick="showSignUpForm()">Sign Up</a></p>
+              </div>
+
+              <div id="signUpForm" style="display: none;">
+                  <h2 class="form-heading">Sign Up</h2>
+                  <form>
+                      <div class="form-group">
+                          <label for="signUpName">Name</label>
+                          <input type="text" class="form-control" id="signUpName" placeholder="Enter your name">
+                      </div>
+                      <div class="form-group">
+                          <label for="signUpEmail">Email</label>
+                          <input type="email" class="form-control" id="signUpEmail" placeholder="Enter your email">
+                      </div>
+                      <div class="form-group">
+                          <label for="signUpPassword">Password</label>
+                          <input type="password" class="form-control" id="signUpPassword" placeholder="Enter your password">
+                      </div>
+                      <div class="form-group">
+                          <label for="confirmPassword">Confirm Password</label>
+                          <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password">
+                      </div>
+                      <button type="button" class="btn btn-primary" onclick="signUp()">Sign Up</button>
+                  </form>
+                  <p class="mt-3">Already have an account? <a href="#" onclick="showSignInForm()">Sign In</a></p>
+              </div>
+          </div>
+      </div>
+  </div>
     <footer class="last">
       <div class="last-ele">
         <span

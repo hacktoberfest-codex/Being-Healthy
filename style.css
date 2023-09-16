@@ -5,7 +5,7 @@
 .full-content{
   object-fit: cover;
   width: 100%;
-  height: 700px;
+  height:90%;
   background: url(bg\ img\ 3.jpg) center/cover no-repeat ;
 }
 nav {
@@ -56,7 +56,7 @@ nav {
     transition: all 0.3s linear;
   }
   .show-links {
-    height: 10rem;
+    height: 15rem;
   }
   .show-links,.social-icons{
     list-style-type: none;
@@ -73,12 +73,9 @@ nav {
   }
   .last {
     
-    text-align: center;
-    left: 0;
-    right: 0; 
+    text-align: center; 
     width: 100%; 
-    margin: 0 auto;
-    padding: 10px 0; 
+    
     color: #fff;
     background-color: #0b2e33;
     font-size: 0.8rem;
@@ -86,12 +83,16 @@ nav {
 
 .last-ele {
     padding: auto;
-
+     font-size: 0.7rem;
+     margin-top: 1px;
     text-align: center;
 }
 .content{
   padding: 5rem;
 
+}
+.main-content{
+  height: max-content;
 }
 .para{
   text-align: center;
@@ -99,18 +100,56 @@ nav {
   text-transform: capitalize;
 }
 .register{
-  margin-left:42% ;
+  margin-left:40% ;
   border: 2px solid aliceblue;
-  width: max-content;
-  padding: 0.5rem 1rem;
-  
+  width: max-content; 
+  height: 4rem;
 }
+
 .text{
   padding: 1rem;
   color: #fff;
   text-transform: capitalize;
-  font-size: 1.5rem;
+  font-size: 0.8rem;
 }
+body {
+  background-color: #f0f0f0;
+}
+.container {
+  margin-top: 50px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.form-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.btn-primary {
+  width: 100%;
+}
+.btn-secondary {
+  width: 100%;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+.btn-secondary:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
   @media screen and (min-width: 800px) {
   
     .nav-center {
@@ -124,6 +163,12 @@ nav {
     }
     .nav-header {
       padding: 0;
+    }
+    .full-content{
+      object-fit: cover;
+      width: 100%;
+      height: 700px;
+      background: url(bg\ img\ 3.jpg) center/cover no-repeat ;
     }
     .nav-toggle {
       display: none;
@@ -157,5 +202,44 @@ nav {
       .social-icons a:hover {
         color: hsl(205,86%,17%);
       }
+      .last {
+    
+        text-align: center;
+        left: 0;
+        right: 0; 
+        width: 100%; 
+        margin: 0 auto;
+        padding: 10px 0; 
+        color: #fff;
+        background-color: #0b2e33;
+        font-size: 0.8rem;
+    }
+    
+    .last-ele {
+        padding: auto;
+    
+        text-align: center;
+    }
+    .content{
+      padding: 5rem;
+    
+    }
+    .para{
+      text-align: center;
+      color: #fff;
+      text-transform: capitalize;
+    }
+    .register{
+      margin-left:42% ;
+      border: 2px solid aliceblue;
+      width: max-content;
+      padding: 0.5rem 1rem;
       
+    }
+    .text{
+      padding: 1rem;
+      color: #fff;
+      text-transform: capitalize;
+      font-size: 1.5rem;
+    } 
   }
