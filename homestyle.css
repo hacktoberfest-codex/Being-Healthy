@@ -1,0 +1,104 @@
+/* Apply styles to the container */
+.container {
+    background-image: url(bg1.jpg);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    font-size: 2.5rem; /* Adjust the font size */
+    color: #333333; /* Text color */
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 2px; /* Add letter spacing */
+    margin-top: 20px; /* Add top margin for spacing */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a subtle text shadow */
+}
+body{
+    background-image: url(bg1.jpg);
+  }
+
+/* Style the columns (individual video cards) */
+.column {
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+/* Style the video cards with different background colors */
+.card:nth-child(odd) {
+    background-color: #f0f0f0c6; /* Light gray for odd cards */
+}
+
+.card:nth-child(even) {
+    background-color: #e0e0e0c0; /* Slightly darker gray for even cards */
+}
+
+/* Style the video cards */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 2px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Style the video titles */
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Style the video */
+.card video {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+}
+
+/* Style the target area and time duration paragraphs */
+.card p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Media query for responsive layout on smaller screens */
+@media (max-width: 768px) {
+    .column {
+        flex: 0 0 calc(50% - 20px);
+    }
+}
+
+/* Hover effect for columns */
+.column:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add a play button overlay for video cards */
+.card::before {
+    content: "\25B6"; /* Unicode play button character */
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* Button color */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.2s ease;
+}
+
+/* Show play button on hover */
+.card:hover::before {
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+}
