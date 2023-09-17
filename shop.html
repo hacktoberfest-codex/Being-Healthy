@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <title>Document</title>
+    <style>
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #E3E6F3;
+    box-shadow:0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a; 
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+    #navbar li a:active{
+    color: #088178;
+}
+#navbar li a:active::after,
+#navbar li a:hover::after{
+     content: "";
+     width: 30%;
+     height: 2px;
+     background-color: #088178;
+     position: absolute;
+     bottom: -4px;
+     left: 20px;
+}
+
+
+      #feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+        #feature .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+    
+}
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+ 
+}
+#feature .fe-box h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color:#088178 ;
+    background-color: #fddde4;
+}
+#feature .fe-box img{
+    width: 100%;
+    height: 70%;
+    margin-bottom: 10px;
+}
+#feature .fe-box:nth-child(2) h6{
+    background-color: #cdebbc;
+}
+#feature .fe-box:nth-child(3) h6{
+    background-color: #d1e8fe;
+}
+
+#feature .fe-box:nth-child(4) h6{
+    background-color: #cdd4f8;
+}
+
+#feature .fe-box:nth-child(5) h6{
+    background-color: #f6dbf6;
+}
+#feature .fe-box:nth-child(6) h6{
+    background-color: #fff2e5;
+}
+    </style>
+</head>
+
+<body>
+
+   
+    
+    <div class="header">
+    <section id="hero">
+        <h4>Trade-Of-with-nutrition</h4>
+        <h2>Deal the way your body wants</h2>
+    
+      </section>
+
+      <div>
+        <ul id="navbar">
+            <li><a class="active" href="#">Protein</a></li>
+            <li><a href="#">Carbs</a></li>
+            <li><a href="#">Vitamins</a></li>
+            <li><a href="#">minerals</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    </div>
+    <h2>Protein</h2>
+    <section id="feature" class="section-p1">
+       
+    <div class="fe-box">
+        <img src="https://cdn.britannica.com/94/151894-050-F72A5317/Brown-eggs.jpg" alt="">
+        <h6>Eggs</h6>
+    </div>
+    <div class="fe-box">
+        <img src="https://th.bing.com/th/id/OIP.S9Cqtt2_Vt3ocdmTyoIr-wHaEw?pid=ImgDet&rs=1" alt="">
+        <h6>Almonds</h6>
+    </div>
+    <div class="fe-box">
+        <img src="https://th.bing.com/th/id/OIP.oRZ1Ke55655YKb-f3C8gugHaE-?pid=ImgDet&rs=1" alt="">
+        <h6>Chicken breast</h6>
+    </div>
+    <div class="fe-box">
+        <img src="https://th.bing.com/th/id/OIP.I1tHy-Vzz_KzOXTkV_VQ0gHaE7?pid=ImgDet&rs=1" alt="">
+        <h6>Cottage cheese</h6>
+    </div>
+    <div class="fe-box">
+        <img src="https://th.bing.com/th/id/OIP.1YT94ywuw9lMgKNj6JL8sgHaFj?pid=ImgDet&rs=1" alt="">
+        <h6>Greek yogurt</h6>
+    </div>
+    <div class="fe-box">
+        <img src="https://th.bing.com/th/id/OIP.1_ASNqUJgNDuWCqN42nPoQHaE7?pid=ImgDet&rs=1" alt="">
+        <h6>Milk</h6>
+    </div>
+    <div class="fe-box">
+        <img src="https://www.healthifyme.com/blog/wp-content/uploads/2021/05/Lentils-Health-Benefits-Nutritional-Facts-and-Recipes.jpg" alt="">
+        <h6>Lentils</h6>
+    </div>
+    <div class="fe-box">
+        <img src="https://th.bing.com/th/id/OIP.BAQEXvPyI-UngilDEFzJWAHaE7?pid=ImgDet&rs=1" alt="">
+        <h6>Fish </h6>
+    </div>
+    <div class="fe-box">
+        <img src="https://www.thespruceeats.com/thmb/uaQfRPEyJHVPhPavZLCUL9mccOQ=/3872x2592/filters:fill(auto%2C1)/quinoa-526250463-5ace754fc5542e0036869250.jpg" alt="">
+        <h6>Quinoa</h6>
+    </div>
+  </section>
+
+<h2>Carbohydrate</h2>
+  <section id="feature" class="section-p1">
+       
+    <div class="fe-box">
+        <img src="https://th.bing.com/th/id/OIP.pEVAP0EQn1QAbdYvUR4B8QHaE8?pid=ImgDet&rs=1" alt="">
+        <h6>Suger</h6>
+    </div>
+    <div class="fe-box">
+        <img src="https://th.bing.com/th/id/OIP.PHjM-uQDZrED58gApp-AQHaE?pid=ImgDet&rs=1" alt="">
+        <h6>Cereals</h6>
+    </div>
+    <div class="fe-box">
+        <img src="https://th.bing.com/th/id/R.80dc6a8abd689c097a1ba50c290da5c9?rik=tRy9BWN52gpEJQ&riu=http%3a%2f%2freviewmilwaukee.com%2fwp-content%2fuploads%2f2015%2f01%2fScor_Nov24_2014_155.jpg&ehk=2mQhAYuEHNLwwKDuD7av0yxGsCU5sRcfG%2fwAHEZjjIo%3d&risl=&pid=ImgRaw&r=0" alt="">
+        <h6>Cookies and bakery products</h6>
+    </div>
+    <div class="fe-box">
+        <img src="https://th.bing.com/th/id/OIP.Nzf50Ur9j2g2Q3yEI5liyQHaE8?pid=ImgDet&rs=1" alt="">
+        <h6>Panes</h6>
+    </div>
+    <div class="fe-box">
+        <img src="https://th.bing.com/th/id/R.b03bfc18247b1d9443954f282cd47fad?rik=Y3F5GViV5mhVPQ&riu=http%3a%2f%2fwww.zastavki.com%2fpictures%2f2560x1600%2f2012%2fFood_Differring_meal_fresh_Vegetables_033193_.jpg&ehk=pLHEHWJZ9fHhe5y9UbbhWwsogR7BUEWszs%2b7Vwgr5Ik%3d&risl=1&pid=ImgRaw&r=0" alt="">
+        <h6> Vegetables</h6>
+    </div>
+    </section>
+
+    <h2>Vitamins</h2>
+
+    <section id="feature" class="section-p1">
+       
+        <div class="fe-box">
+            <img src="https://th.bing.com/th/id/R.d0562ba9d5e11a849c922c7a3b9bad87?rik=uwycyHncSKKb2Q&riu=http%3a%2f%2fwww.publicdomainpictures.net%2fpictures%2f80000%2fvelka%2fsunflower-seeds-1393667091wQv.jpg&ehk=Sl76dg%2fg%2bfzR1Scogh%2fGUFUv0BtN3T7y8xKlx%2bhbLZ4%3d&risl=&pid=ImgRaw&r=0" alt="">
+            <h6>Seeds</h6>
+        </div>
+        <div class="fe-box">
+            <img src="https://www.health.harvard.edu/media/content/images/p7_Broccoli_HH1812_gi905351392.jpg" alt="">
+            <h6>Broccoli</h6>
+        </div>
+        <div class="fe-box">
+            <img src="https://th.bing.com/th/id/R.ee4653fc79d99035cddcf93ccc7d9db8?rik=qlBkt8eyNBKh%2fw&riu=http%3a%2f%2fthemeatlodge.com%2fwp-content%2fuploads%2f2013%2f02%2fpork.jpg&ehk=Lv3EGFEx8MF5MyChjCwHQ9k9W2efhPIYhn5eZrm9%2faQ%3d&risl=&pid=ImgRaw&r=0" alt="">
+            <h6>Pork</h6>
+        </div>
+        <div class="fe-box">
+            <img src="https://wp.themeateater.com/wp-content/uploads/2020/08/fall-mushroom-puffball-1920x1435.jpg" alt="">
+            <h6>Mushrooms</h6>
+        </div>
+        <div class="fe-box">
+            <img src="https://th.bing.com/th/id/OIP.g-F3xW9jn85xkIVA0cbbJwHaE8?pid=ImgDet&rs=1" alt="">
+            <h6> Nuts</h6>
+        </div>
+        <div class="fe-box">
+            <img src="https://th.bing.com/th/id/OIP.ZTUIBt1G8bvAW1i0Xmwl8gHaFi?pid=ImgDet&rs=1" alt="">
+            <h6> Sweet Bell Peppers</h6>
+        </div>
+        <div class="fe-box">
+            <img src="https://th.bing.com/th/id/OIP.t4kILVfOff_r2AwXdVZXpgHaE8?pid=ImgDet&rs=1" alt="">
+            <h6> Avocados</h6>
+        </div>
+        <div class="fe-box">
+            <img src="https://th.bing.com/th/id/R.2575bf15db3d0e7998c2b23b6ad7931e?rik=cJqPvzzrtjnzLA&riu=http%3a%2f%2fthemicrogardener.com%2fwp-content%2fuploads%2f2013%2f05%2fGreen-peas-in-a-pod.jpg&ehk=Ds14zeLaBlamZysAgfMZeX36FJP%2f8Phtttcuvsedia0%3d&risl=&pid=ImgRaw&r=0" alt="">
+            <h6> Green Peas</h6>
+        </div>
+        </section>
+        <h2>minerals</h2>
+
+        <section id="feature" class="section-p1">
+       
+            <div class="fe-box">
+                <img src="https://th.bing.com/th/id/OIP.v7_qwGWRHiMR8qzauMNZugHaEu?pid=ImgDet&rs=1" alt="">
+                <h6>Shellfish</h6>
+            </div>
+            <div class="fe-box">
+                <img src="https://foodrevolution.org/wp-content/uploads/2017/02/Cruciferous-vegetables-health-benefits.jpg" alt="">
+                <h6>Cruciferous vegetables </h6>
+            </div>
+            <div class="fe-box">
+                <img src="https://th.bing.com/th/id/OIP.M1bSs9oCTARTcFPIGV4olQHaD4?pid=ImgDet&rs=1" alt="">
+                <h6>Organ meats</h6>
+            </div>
+            <div class="fe-box">
+                <img src="https://th.bing.com/th/id/OIP.KlXjhOU-nwA2ZmVUrfZA1wHaFB?pid=ImgDet&rs=1" alt="">
+                <h6>Beans</h6>
+            </div>
+            <div class="fe-box">
+                <img src="https://www.thestatesman.com/wp-content/uploads/2018/07/Cocoa-Powder.jpg" alt="">
+                <h6> Cocoa </h6>
+            </div>
+            <div class="fe-box">
+                <img src="https://freshrestaurants.com/wp-content/uploads/2016/11/mixed-berries.jpg" alt="">
+                <h6> Berries </h6>
+            </div>
+            <div class="fe-box">
+                <img src="https://th.bing.com/th/id/OIP.t4kILVfOff_r2AwXdVZXpgHaE8?pid=ImgDet&rs=1" alt="">
+                <h6> Avocados</h6>
+            </div>
+            <div class="fe-box">
+                <img src="https://th.bing.com/th/id/OIP.1gO9pfHtTAcFOWH_Pw_g1QHaE8?pid=ImgDet&rs=1" alt="">
+                <h6> Yogurt and cheese</h6>
+            </div>
+            <div class="fe-box">
+                <img src="https://www.thespruceeats.com/thmb/hHoP1_avOXa7GysTugy8t1w4LpI=/4048x2696/filters:fill(auto,1)/moroccan-baked-whole-sardines-recipe-2394638-hero-01-5c7da67146e0fb0001d83dc2.jpg" alt="">
+                <h6> Sardines</h6>
+            </div>
+            </section>
+    
+
+
+    
+</body>
+</html>
