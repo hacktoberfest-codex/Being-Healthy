@@ -93,6 +93,7 @@ nav {
 }
 .main-content{
   height: max-content;
+  width: 100%;
 }
 .para{
   text-align: center;
@@ -103,11 +104,12 @@ nav {
   margin-left:40% ;
   border: 2px solid aliceblue;
   width: max-content; 
-  height: 4rem;
+  height: 3rem;
+
 }
 
 .text{
-  padding: 1rem;
+  
   color: #fff;
   text-transform: capitalize;
   font-size: 0.8rem;
@@ -149,7 +151,45 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
+.signinform{
+  background-color: #fff;
+  text-align: center;
+  width: 50vw;
+  height: 17rem;
+  padding: 0 3rem 0 3rem;
+  z-index: 10;
+  position: absolute;
+  top: 37%;
+  left: 27%;
+  visibility: hidden;
+  z-index: -10;
+  
+}
+.signupform{
+  background-color: #fff;
+  text-align: center;
+  width: 60vw;
+  height: 20rem;
+  padding: 4rem 3rem 0 3rem;
+  z-index: 10;
+  position: absolute;
+  top: 37%;
+  left: 27%;
+  visibility: hidden;
+  z-index: -10;
+}
+.show{
+  visibility: visible;
+  z-index: 10;
+}
+.close-btn{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: transparent;
+  color: red;
+}
   @media screen and (min-width: 800px) {
   
     .nav-center {
@@ -170,6 +210,7 @@ a:hover {
       height: 700px;
       background: url(bg\ img\ 3.jpg) center/cover no-repeat ;
     }
+    
     .nav-toggle {
       display: none;
     }
@@ -199,9 +240,7 @@ a:hover {
         color:#fff;
         transition: all 0.3s linear;
       }
-      .social-icons a:hover {
-        color: hsl(205,86%,17%);
-      }
+      
       .last {
     
         text-align: center;
@@ -230,16 +269,52 @@ a:hover {
       text-transform: capitalize;
     }
     .register{
-      margin-left:42% ;
-      border: 2px solid aliceblue;
-      width: max-content;
-      padding: 0.5rem 1rem;
-      
+      cursor: pointer;
     }
     .text{
-      padding: 1rem;
+      padding: 0.4rem;
       color: #fff;
+      
       text-transform: capitalize;
       font-size: 1.5rem;
     } 
+    .signinform{
+      background-color: #fff;
+      text-align: center;
+      width: 34rem;
+      height: 100vh;
+      padding: 6rem 3rem 0 3rem;
+      z-index: 10;
+      position: absolute;
+      top: 3%;
+      left: 26%;
+      visibility: hidden;
+      z-index: -10;
+      
+    }
+    .signupform{
+      background-color: #fff;
+      text-align: center;
+      width: 31rem;
+      height: 26rem;
+      padding: 4rem 3rem 0 3rem;
+      z-index: 10;
+      position: absolute;
+      top: 34%;
+      left: 27%;
+      visibility: hidden;
+      z-index: -10;
+    }
+    .show{
+      visibility: visible;
+      z-index: 10;
+    }
+    .close-btn{
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      border: none;
+      background: transparent;
+      color: red;
+    }
   }
