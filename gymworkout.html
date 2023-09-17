@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Video Player</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+         body {
+            background-image: url('bg img 4.jpg');
+            background-size: cover; 
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+        }
+      
+        
+        .video-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #d7cbdbbe;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .video-container video {
+            width: 360px;
+            height: 240px;
+            border: 1px solid #555;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .play-button,
+        .pause-button {
+            margin: 5px;
+            padding: 10px 20px;
+            background-color: #0fdfa1b9;
+            color: #f7f7f7;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .play-button:hover,
+        .pause-button:hover {
+            background-color: #0056b3;
+        }
+
+        .about-section {
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+        #bk {
+    font-size: 3.5rem;
+    font-style: monospace;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgb(26, 211, 162);
+}
+
+.jumbotron {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 79, 139, 0.262);
+
+}
+#bkk{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(163, 116, 29, 0);
+ 
+}
+
+    </style>
+</head>
+
+<body>
+
+    <div class="my-container">
+        <div class="content">
+            <div class="container">
+                <div class="jumbotron text-center text-white " id="bkk">
+                    
+                    <h1 id="bk">GYM WORKOUTS</h1>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+    <div class="container">
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="video-container">
+                            <video width="360" height="240" controls>
+                                <source src="Back-Extension.mkv" type="video/mp4">
+                            </video>
+                            <div class="about-section">
+                                <h6>Back-Extension</h6>
+                                <p>Back extensions target<br> the lower back muscles.</p>
+                            </div>
+                        </div>
+                        <div class="button-container">
+                            <button class="play-button">Play</button>
+                            <button class="pause-button">Pause</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="video-container">
+                            <video width="360" height="240" controls>
+                                <source src="Biceps Curl.mkv" type="video/mp4">
+                            </video>
+                            <div class="about-section">
+                                <h6>Biceps Curl</h6>
+                                <p>Biceps <br>curls focus on<br> the <br>biceps in <br>the <br>upper arm.</p>
+                            </div>
+                        </div>
+                        <div class="button-container">
+                            <button class="play-button">Play</button>
+                            <button class="pause-button">Pause</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="video-container">
+                            <video width="360" height="240" controls>
+                                <source src="Chest-Dip.mkv" type="video/mp4">
+                            </video>
+                            <div class="about-section">
+                                <h6>Chest-Dip</h6>
+                                <p>Chest <br>dips work <br>the<br> chest<br> muscles.</p>
+                            </div>
+                        </div>
+                        <div class="button-container">
+                            <button class="play-button">Play</button>
+                            <button class="pause-button">Pause</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="video-container">
+                            <video width="360" height="240" controls>
+                                <source src="DeadLift.mkv" type="video/mp4">
+                            </video>
+                            <div class="about-section">
+                                <h6>DeadLift</h6>
+                                <p>Deadlifts engage lower back,<br>hamstrings, <br>and upper <br>back muscles.</p>
+                            </div>
+                        </div>
+                        <div class="button-container">
+                            <button class="play-button">Play</button>
+                            <button class="pause-button">Pause</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="video-container">
+                            <video width="360" height="240" controls>
+                                <source src="Farmer's Carry Dumbbell.mkv" type="video/mp4">
+                            </video>
+                            <div class="about-section">
+                                <h6>Farmer's Carry Dumbbell</h6>
+                                <p>Exercise targets forearms, shoulders, upper back, and core muscles.</p>
+                            </div>
+                        </div>
+                        <div class="button-container">
+                            <button class="play-button">Play</button>
+                            <button class="pause-button">Pause</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="video-container">
+                            <video width="360" height="240" controls>
+                                <source src="Overhead Press Barbell.mkv" type="video/mp4">
+                            </video>
+                            <div class="about-section">
+                                <h6>Overhead Press Barbell</h6>
+                                <p>The Overhead Press with a barbell mainly targets the shoulder muscles.</p>
+                            </div>
+                        </div>
+                        <div class="button-container">
+                            <button class="play-button">Play</button>
+                            <button class="pause-button">Pause</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><div class="container">
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="video-container">
+                            <video width="360" height="240" controls>
+                                <source src="Squat Barbell.mkv" type="video/mp4">
+                            </video>
+                            <div class="about-section">
+                                <h6>Squat Barbell</h6>
+                                <p>Barbell squats target quads, glutes, hamstrings, lower back, and core</p>
+                            </div>
+                        </div>
+                        <div class="button-container">
+                            <button class="play-button">Play</button>
+                            <button class="pause-button">Pause</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="video-container">
+                            <video width="360" height="240" controls>
+                                <source src="Triceps Push Down. Cable.mkv" type="video/mp4">
+                            </video>
+                            <div class="about-section">
+                                <h6>Triceps<br> Push <br>Down.<br> Cable</h6>
+                                <p>Cable Triceps Push Down focuses <br>on<br> triceps.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="button-container">
+                            <button class="play-button">Play</button>
+                            <button class="pause-button">Pause</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><div class="container">
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="video-container">
+                            <video width="360" height="240" controls>
+                                <source src="Upright Row Barbell.mkv" type="video/mp4">
+                            </video>
+                            <div class="about-section">
+                                <h6>Upright Row Barbell</h6>
+                                <p>Upright Rows with a barbell target the shoulders and upper back.</p>
+                            </div>
+                        </div>
+                        <div class="button-container">
+                            <button class="play-button">Play</button>
+                            <button class="pause-button">Pause</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="video-container">
+                            <video width="360" height="240" controls>
+                                <source src="Lateral Raise.mkv" type="video/mp4">
+                            </video>
+                            <div class="about-section">
+                                <h6>Lateral <br>Raise</h6>
+                                <p>Lateral<br> Raises<br> target<br> the<br> shoulder muscles.</p>
+                            </div>
+                        </div>
+                        <div class="button-container">
+                            <button class="play-button">Play</button>
+                            <button class="pause-button">Pause</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+    <!-- Include Bootstrap JS for required functionality -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var videos = document.querySelectorAll(".video-container video");
+            var playButtons = document.querySelectorAll(".play-button");
+            var pauseButtons = document.querySelectorAll(".pause-button");
+
+            playButtons.forEach(function (playButton, index) {
+                playButton.addEventListener("click", function () {
+                    videos[index].play();
+                });
+            });
+
+            pauseButtons.forEach(function (pauseButton, index) {
+                pauseButton.addEventListener("click", function () {
+                    videos[index].pause();
+                });
+            });
+        });
+    </script>
+    
+</body>
+
+</html>
